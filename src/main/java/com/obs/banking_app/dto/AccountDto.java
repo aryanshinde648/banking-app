@@ -17,7 +17,7 @@ public class AccountDto {
 
     private Long id;
     
-    private String accountNumber;
+    private Long accountNumber;
     
     private String accountType;
     

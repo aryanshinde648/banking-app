@@ -13,6 +13,14 @@ public class AdminDto {
 
     private Long id;
 
+    private String fName;
+
+    private String lName;
+
+    private String mName;
+
+    private String fullName;
+
     private String username;
 
     @Size(min = 6, message = "Password must be at least 6 characters long")

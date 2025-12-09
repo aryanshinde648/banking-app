@@ -32,6 +32,18 @@ public class Admin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "f_name", nullable = false)
+    private String fName;
+
+    @Column(name = "m_name", nullable = false)
+    private String mName;
+
+    @Column(name = "l_name", nullable = false)
+    private String lName;
+
+    @Column(name = "full_name", nullable = false)
+    private String fullName= fName+" "+mName+" "+lName;
+
     @Column(name = "username", unique = true, nullable = false)
     private String username;
 

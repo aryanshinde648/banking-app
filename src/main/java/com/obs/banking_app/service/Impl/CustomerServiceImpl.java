@@ -17,12 +17,12 @@ import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
-public class CustomerServiceImplementation implements CustomerService {
+public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository customerRepository;
     private final CustomerConversion customerConversion;
 
-    public CustomerServiceImplementation(CustomerRepository customerRepository,
+    public CustomerServiceImpl(CustomerRepository customerRepository,
             CustomerConversion customerConversion) {
         this.customerRepository = customerRepository;
         this.customerConversion = customerConversion;

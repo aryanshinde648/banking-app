@@ -37,7 +37,7 @@ public class Account {
     private Long id;
 
     @Column(name = "account_number", unique = true, nullable = false)
-    private String accountNumber;
+    private Long accountNumber;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "account_type", nullable = false)
