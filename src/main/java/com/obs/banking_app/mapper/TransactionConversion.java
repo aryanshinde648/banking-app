@@ -11,7 +11,7 @@ import com.obs.banking_app.entity.Transaction;
 
 @Mapper(componentModel = "spring")
 public interface TransactionConversion {
-
+    
     @Mapping(target = "transactionId", source = "transactionId")
     @Mapping(target = "transactionType", source = "transactionType")
     @Mapping(target = "timestamp", source = "timestamp", qualifiedByName = "localDateTimeToTimestamp")

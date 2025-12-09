@@ -11,7 +11,7 @@ import com.obs.banking_app.entity.Account;
 
 @Mapper(componentModel = "spring")
 public interface AccountConversion {
-
+    
     @Mapping(target = "id", source = "id")
     @Mapping(target = "accountOpenedAt", source = "accountOpenedAt", qualifiedByName = "localDateTimeToTimestamp")
     Account toAccount(AccountDto accountDto);

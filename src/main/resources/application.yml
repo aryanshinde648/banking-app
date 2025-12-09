@@ -1,0 +1,25 @@
+spring:
+    application:
+        name: banking-app
+    datasource:
+        url: jdbc:mysql://localhost:3306/bank_app?createDatabaseIfNotExist=true
+        username: root
+        password: admin
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger
+
+server:
+  port: 8081
+  
+logging:
+  level:
+    '[org.hibernate.SQL]': DEBUG
+    '[org.hibernate.type.descriptor.sql]': TRACE
